@@ -12,11 +12,11 @@ $(document).ready(function(){
     
     function createTweet(input) {
         
-        var tweetText = "Quote of the day - " + input.quoteText + " Author: " + input.quoteAuthor;
-        
         if (!input.quoteAuthor.length) {
             input.quoteAuthor = "Unknown author";
         }
+        
+        var tweetText = "Quote of the day - " + input.quoteText + " Author: " + input.quoteAuthor;
         
         if (tweetText.length > 140) {
             getQuote();
